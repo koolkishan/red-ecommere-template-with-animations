@@ -1,0 +1,33 @@
+/*========================SCROLL TO TOP=============================*/
+.scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 3;
+  .brand {
+    height: 3.8rem;
+    width: max-content;
+    .logo {
+      background-color: #e63946;
+      padding: 0.5rem 1.1rem;
+      border-radius: 0.5rem;
+      transform: rotate(45deg);
+      h3 {
+        transform: rotate(-45deg);
+        color: white;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+/*========================CUSTOM SCROLLBAR=============================*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: #14213d;
+  &-thumb {
+    background-color: #e63946;
+  }
+}

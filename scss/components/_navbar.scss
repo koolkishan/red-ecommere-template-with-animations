@@ -1,0 +1,29 @@
+.navbar {
+  height: 3.8rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px;
+  margin-bottom: 3rem;
+  padding: 0 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .all__category {
+    background-color: rgb(233, 233, 233);
+    color: var(--primary-color);
+    &:hover {
+      background-color: var(--secondary-color);
+      color: white;
+    }
+  }
+  .category {
+    @include applyLinksStyle;
+    ul {
+      li {
+        a {
+          margin: 0 1.5rem;
+          font-size: 1.1rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

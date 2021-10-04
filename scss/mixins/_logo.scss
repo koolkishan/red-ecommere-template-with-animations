@@ -1,0 +1,24 @@
+@mixin applyLogoStyles {
+  .brand {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    height: 3.8rem;
+    .logo {
+      background-color: var(--secondary-color);
+      padding: 0.3rem 0.85rem;
+      border-radius: 0.5rem;
+      transform: rotate(45deg);
+      h3 {
+        transform: rotate(-45deg);
+        color: white;
+        font-weight: 700;
+      }
+    }
+    .text {
+      color: white;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 15rem;
+  margin-top: 8rem;
+  .service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary-color);
+    gap: 1rem;
+    padding: 1rem 0;
+    color: var(--primary-color);
+    i {
+      font-size: 1.5rem;
+    }
+  }
+}

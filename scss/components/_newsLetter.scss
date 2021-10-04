@@ -1,0 +1,15 @@
+.newsletter {
+  padding: 8rem 15rem;
+  display: flex;
+  justify-content: space-between;
+  .newsletter__text {
+    color: var(--primary-color);
+  }
+  .newsletter__form {
+    display: flex;
+    input {
+      padding: 0 10rem 0 2rem;
+      border: 0.1rem solid var(--secondary-color);
+    }
+  }
+}

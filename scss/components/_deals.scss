@@ -1,0 +1,74 @@
+.deals {
+  padding: 6rem 15rem 0 15rem;
+  margin: 2rem 0;
+  color: var(--primary-color);
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: var(--secondary-color);
+    }
+  }
+  .deal__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+
+    .deal {
+      border: 0.1px solid var(--border-color);
+      position: relative;
+      padding: 1rem;
+      .deal__off {
+        position: absolute;
+        cursor: pointer;
+        bottom: 5rem;
+        right: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--secondary-color);
+        width: max-content;
+        padding: 1rem;
+        border-radius: 2rem 6rem;
+        transition: 0.4s ease-in-out;
+        &:hover {
+          border-radius: 6rem 2rem;
+          background-color: var(--primary-color);
+        }
+        span {
+          color: white;
+          font-weight: 700;
+        }
+      }
+      .deal__image {
+        img {
+          width: 100%;
+          height: 12rem;
+          object-fit: cover;
+        }
+      }
+      .deal__info {
+        .deal__details {
+          //   .deal__name {
+          //   }
+          .deal__price {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .deal__orignal__price {
+              text-decoration: line-through;
+            }
+          }
+          .deal__detail {
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+}
